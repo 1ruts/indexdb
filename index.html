@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Albin Garcia">
+    <meta name="Description" content="Data Base for Sneaker Sphere">
+    <link rel="stylesheet" href="style.css">
+    <title>Sneaker Sphere DB</title>
+</head>
+
+<body>
+
+    <h1>Sneaker Sphere DB</h1>
+    <hr>
+    <div class="form-container">
+        <label for="id">Product ID:</label>
+        <input type="text" id="id" placeholder="Enter unique product ID"><br>
+
+        <label for="description">Product Description:</label>
+        <input type="text" id="description" placeholder="Enter product description"><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter product price"><br>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" placeholder="Enter image URL"><br>
+
+        <button id="addProductBtn">Add Product</button>
+        <button id="clearBtn">Clear All</button>
+    </div>
+
+    <h2>Products</h2>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Description</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+    </table>
+
+    
+
+<script src="DB.js"></script>
+</body>
+
+</html>
